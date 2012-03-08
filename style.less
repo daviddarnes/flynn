@@ -1,0 +1,46 @@
+/*!
+ * VelcroStrap
+ *
+ * by David Darnes
+ * Based upon Bootstrap v2.0.0
+ */
+
+// CSS Reset
+@import "reset.less";
+
+// Core variables and mixins
+@import "variables.less";
+@import "mixins.less";
+
+// Grid system and page structure
+@import "scaffolding.less";
+@import "grid.less";
+
+// Base CSS
+@import "type.less";
+@import "code.less";
+@import "forms.less";
+@import "tables.less";
+
+@import "font-awesome.less";
+
+
+// Some Mixins get you started
+
+	// Colours
+	@colour-key: 			#888;
+	@colour-key-light:		lighten(@colour-key, 90%);
+	@colour-key-alpha:		fadeout(@colour-key-light, 1%);
+	
+	// Objects
+	@corners:				5px;
+	@object-shadow:			1px 1px 4px rgba(0, 0, 0, 0.3);
+	@zindex-image:			-1;
+	@zindex-interface: 		1000;	
+	
+	// Links
+	@linkColor:             #cb4102;
+	@linkColorHover:        darken(@linkColor, 15%);
+
+
+// All that sweet styling you're going to do for your site or theme
