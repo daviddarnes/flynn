@@ -1,46 +1,26 @@
 /*!
- * VelcroStrap
- *
- * by David Darnes
- * Based upon Bootstrap v2.0.0
- */
+Theme Name: VelcroStrap
+Author: David Darnes
+Author URI: http://david.darn.es/
+Based upon Twitter Bootstrap v2.0.3 but designed to be a purified base for a website theme. No fancy buttons, no 'common as muck' Helvetica. You're on your own buddy!
+*/
 
-// CSS Reset
 @import "reset.less";
-
-// Core variables and mixins
-@import "variables.less";
-@import "mixins.less";
-
-// Grid system and page structure
-@import "scaffolding.less";
 @import "grid.less";
+@import "mixins.less";
+@import "layouts.less";
 
-// Base CSS
-@import "type.less";
-@import "code.less";
-@import "forms.less";
-@import "tables.less";
-
-@import "font-awesome.less";
-
-
-// Some Mixins get you started
-
-	// Colours
-	@colour-key: 			#888;
-	@colour-key-light:		lighten(@colour-key, 90%);
-	@colour-key-alpha:		fadeout(@colour-key-light, 1%);
-	
-	// Objects
-	@corners:				5px;
-	@object-shadow:			1px 1px 4px rgba(0, 0, 0, 0.3);
-	@zindex-image:			-1;
-	@zindex-interface: 		1000;	
-	
-	// Links
-	@linkColor:             #cb4102;
-	@linkColorHover:        darken(@linkColor, 15%);
+@background:			#f1f1f1;
+@copy-main:				darken(@background, 50%);
+@copy-shadow:			0 1px rgba(255,255,255,0.8);
+@copy-inset-shadow:		0 -1px rgba(0,0,0,0.2);
+@copy-outset-shadow:	0 1px rgba(0,0,0,0.2);
+@blocks:				darken(@background, 3%);
+@accent-colour:			#9eb026;
+@accent-colour-focus: 	#c1d72e;
 
 
-// All that sweet styling you're going to do for your site or theme
+// Your badass styling goes here, below is all the responsive files and above are a few mixins you might want to use
+
+
+@import "responsive.less";
