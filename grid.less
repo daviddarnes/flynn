@@ -1,5 +1,86 @@
-// Fixed (940px)
-#grid > .core(@gridColumnWidth, @gridGutterWidth);
+/*
+ * Name: Griddle
+ * Author: David Darnes
+ * Author url: http://david.darn.es
+ * Tools: Made in Coda, Codekit and Less
+ * About: 12 column grid with responsive options, 960px base with large desktop, tablet and mobile views.
+ */
 
-// Fluid (940px)
-#grid > .fluid(@fluidGridColumnWidth, @fluidGridGutterWidth);
+// Base grid columns and gutters, normally 960px
+@grid-base: 60px; // Column width
+@grid-gutter: 20px; // Gutter width
+
+[class*="span-"] { margin-left: @grid-gutter; float: left; max-width: 100%; }
+.span-1 {  width:@grid-base; }
+.span-2 {  width:@grid-base * 2  + @grid-gutter; }
+.span-3 {  width:@grid-base * 3  + @grid-gutter * 2; }
+.span-4 {  width:@grid-base * 4  + @grid-gutter * 3; }
+.span-5 {  width:@grid-base * 5  + @grid-gutter * 4; }
+.span-6 {  width:@grid-base * 6  + @grid-gutter * 5; }
+.span-7 {  width:@grid-base * 7  + @grid-gutter * 6; }
+.span-8 {  width:@grid-base * 8  + @grid-gutter * 7; }
+.span-9 {  width:@grid-base * 9  + @grid-gutter * 8; }
+.span-10 { width:@grid-base * 10 + @grid-gutter * 9; }
+.span-11 { width:@grid-base * 11 + @grid-gutter * 10; }
+.span-12, .container { width:@grid-base * 12 + @grid-gutter * 11; }
+.container { float: none; margin: 0 auto; }
+.row {
+	margin-left: -@grid-gutter; clear: both; zoom: 1;
+	&:after, &:before {
+		display: table; line-height: 0; content: ""; clear: both;
+	}
+}
+img { min-width: 100%; height: auto; }
+
+@media (min-width: 1200px) {
+
+	// Base grid for extra large browsing
+	@grid-base: 70px; // Column width
+	@grid-gutter: 30px; // Gutter width
+
+	[class*="span-"] { margin-left: @grid-gutter; }
+	.span-1 {  width:@grid-base; }
+	.span-2 {  width:@grid-base * 2  + @grid-gutter; }
+	.span-3 {  width:@grid-base * 3  + @grid-gutter * 2; }
+	.span-4 {  width:@grid-base * 4  + @grid-gutter * 3; }
+	.span-5 {  width:@grid-base * 5  + @grid-gutter * 4; }
+	.span-6 {  width:@grid-base * 6  + @grid-gutter * 5; }
+	.span-7 {  width:@grid-base * 7  + @grid-gutter * 6; }
+	.span-8 {  width:@grid-base * 8  + @grid-gutter * 7; }
+	.span-9 {  width:@grid-base * 9  + @grid-gutter * 8; }
+	.span-10 { width:@grid-base * 10 + @grid-gutter * 9; }
+	.span-11 { width:@grid-base * 11 + @grid-gutter * 10; }
+	.span-12, .container { width:@grid-base * 12 + @grid-gutter * 11; }
+	.row { margin-left: -@grid-gutter; }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+	// Base grid tablets, eg the ever popular iPad
+	@grid-base: 40px; // Column width
+	@grid-gutter: 15px; // Gutter width
+
+	[class*="span-"] { margin-left: @grid-gutter; }
+	.span-1 {  width:@grid-base; }
+	.span-2 {  width:@grid-base * 2  + @grid-gutter; }
+	.span-3 {  width:@grid-base * 3  + @grid-gutter * 2; }
+	.span-4 {  width:@grid-base * 4  + @grid-gutter * 3; }
+	.span-5 {  width:@grid-base * 5  + @grid-gutter * 4; }
+	.span-6 {  width:@grid-base * 6  + @grid-gutter * 5; }
+	.span-7 {  width:@grid-base * 7  + @grid-gutter * 6; }
+	.span-8 {  width:@grid-base * 8  + @grid-gutter * 7; }
+	.span-9 {  width:@grid-base * 9  + @grid-gutter * 8; }
+	.span-10 { width:@grid-base * 10 + @grid-gutter * 9; }
+	.span-11 { width:@grid-base * 11 + @grid-gutter * 10; }
+	.span-12, .container { width:@grid-base * 12 + @grid-gutter * 11; }
+	.row { margin-left: -@grid-gutter; }
+}
+
+@media (max-width: 767px) {
+
+	// Base grid mobile, eg the even more popular iPhone
+	.container { width: 100%; }
+	.row { margin: 0 @grid-gutter; }
+	.row .row { margin: 0; }
+	[class*="span-"] { margin-left: 0; width: 100%; }
+}
