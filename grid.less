@@ -30,7 +30,12 @@
 		display: table; line-height: 0; content: ""; clear: both;
 	}
 }
-img { min-width: 100%; height: auto; }
+img { max-width: 100%; height: auto; }
+
+// IE Fixes
+[class*="span-"], .container, .row { zoom: 1; }
+@media \0screen { img { width: auto; } }
+
 
 @media (min-width: 1200px) {
 
