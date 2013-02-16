@@ -1,5 +1,5 @@
 /*
- * Name: Griddle
+ * Name: Flynn
  * Author: David Darnes
  * Author url: http://david.darn.es
  * Tools: Made in Coda, Codekit and Less
@@ -8,7 +8,7 @@
  * Based on Tyler Tate's 1kb Grid - http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
  */
 
-.griddle( @column-width: 60px, @gutter: 20px ) {
+.flynn( @column-width: 60px, @gutter: 20px ) {
 	.span-1 {  width:@column-width; }
 	.span-2 {  width:@column-width * 2  + @gutter; }
 	.span-3 {  width:@column-width * 3  + @gutter * 2; }
@@ -27,7 +27,7 @@
 @column-width: 60px;
 @gutter: 20px;
 
-.griddle( @column-width, @gutter );
+.flynn( @column-width, @gutter );
 
 [class*="span-"] { margin-left: @gutter; float: left; max-width: 100%; }
 .row { margin-left: -@gutter; clear: both; zoom: 1; }
@@ -35,12 +35,16 @@
 .container { float: none; margin: 0 auto; }
 img { min-width: 100%; height: auto; }
 
+// IE Fixes
+[class*="span-"], .container, .row { zoom: 1; }
+@media screen { img { width: auto; } }
+
 // Base grid for extra large browsing
 @media (min-width: 1200px) {
 	@column-width: 70px;
 	@gutter: 30px;
 
-	.griddle( @column-width, @gutter );
+	.flynn( @column-width, @gutter );
 
 	[class*="span-"] { margin-left: @gutter; }
 	.row { margin-left: -@gutter; }
@@ -51,7 +55,7 @@ img { min-width: 100%; height: auto; }
 	@column-width: 40px;
 	@gutter: 15px;
 
-	.griddle( @column-width, @gutter );
+	.flynn( @column-width, @gutter );
 
 	[class*="span-"] { margin-left: @gutter; }
 	.row { margin-left: -@gutter; }
