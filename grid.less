@@ -7,79 +7,78 @@
  *
  * Based on Tyler Tate's 1kb Grid - http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
  */
-
-.griddle( @column-width: 60px, @gutter: 20px ) {
-	.span-1 {  width:@column-width; }
-	.span-2 {  width:@column-width * 2  + @gutter; }
-	.span-3 {  width:@column-width * 3  + @gutter * 2; }
-	.span-4 {  width:@column-width * 4  + @gutter * 3; }
-	.span-5 {  width:@column-width * 5  + @gutter * 4; }
-	.span-6 {  width:@column-width * 6  + @gutter * 5; }
-	.span-7 {  width:@column-width * 7  + @gutter * 6; }
-	.span-8 {  width:@column-width * 8  + @gutter * 7; }
-	.span-9 {  width:@column-width * 9  + @gutter * 8; }
-	.span-10 { width:@column-width * 10 + @gutter * 9; }
-	.span-11 { width:@column-width * 11 + @gutter * 10; }
-	.span-12, .container { width:@column-width * 12 + @gutter * 11; }
-}
+ 
 
 // Base grid columns and gutters, normally 960px
-@column-width: 60px;
+@column: 60px;
 @gutter: 20px;
 
-.griddle( @column-width, @gutter );
+.grid( @column, @gutter ) {
+	.span-1 {  width:@column; }
+	.span-2 {  width:@column * 2  + @gutter; }
+	.span-3 {  width:@column * 3  + @gutter * 2; }
+	.span-4 {  width:@column * 4  + @gutter * 3; }
+	.span-5 {  width:@column * 5  + @gutter * 4; }
+	.span-6 {  width:@column * 6  + @gutter * 5; }
+	.span-7 {  width:@column * 7  + @gutter * 6; }
+	.span-8 {  width:@column * 8  + @gutter * 7; }
+	.span-9 {  width:@column * 9  + @gutter * 8; }
+	.span-10 { width:@column * 10 + @gutter * 9; }
+	.span-11 { width:@column * 11 + @gutter * 10; }
+	.span-12, .container { width:@column * 12 + @gutter * 11; }
+}
+
+.grid( @column, @gutter );
 
 [class*="span-"] { margin-left: @gutter; float: left; max-width: 100%; }
-.row { margin-left: -@gutter; clear: both; zoom: 1; }
-.row:after, .row:before { display: table; line-height: 0; content: ""; clear: both; }
+
 .container { float: none; margin: 0 auto; }
-<<<<<<< HEAD
+
 .row {
-	margin-left: -@grid-gutter; clear: both; zoom: 1;
+	margin-left: -@gutter; clear: both; zoom: 1;
 	&:after, &:before {
 		display: table; line-height: 0; content: ""; clear: both;
 	}
 }
-img { max-width: 100%; height: auto; }
+
+img { min-width: 100%; height: auto; }
+
 
 // IE Fixes
 [class*="span-"], .container, .row { zoom: 1; }
-@media \0screen { img { width: auto; } }
 
-=======
-img { min-width: 100%; height: auto; }
->>>>>>> 3eacf71... Converted duplicated code into manageable mixin .griddle
+img { width: auto~"\9"; }
+
 
 // Base grid for extra large browsing
 @media (min-width: 1200px) {
-	@column-width: 70px;
+	@column: 70px;
 	@gutter: 30px;
 
-	.griddle( @column-width, @gutter );
+	.grid( @column, @gutter );
 
 	[class*="span-"] { margin-left: @gutter; }
 	.row { margin-left: -@gutter; }
 }
+
 
 // Base grid tablets, eg the ever popular iPad
 @media (min-width: 768px) and (max-width: 979px) {
-	@column-width: 40px;
+	@column: 40px;
 	@gutter: 15px;
 
-	.griddle( @column-width, @gutter );
+	.grid( @column, @gutter );
 
 	[class*="span-"] { margin-left: @gutter; }
 	.row { margin-left: -@gutter; }
 }
+
 
 // Base grid mobile, eg the even more popular iPhone
 @media (max-width: 767px) {
 	[class*="span-"] { margin-left: 0; width: 100%; }
-<<<<<<< HEAD
-}
-=======
+
 	.row { margin: 0 @gutter; }
 	.row .row { margin: 0; }
 	.container { width: 100%; }
 }
->>>>>>> 3eacf71... Converted duplicated code into manageable mixin .griddle

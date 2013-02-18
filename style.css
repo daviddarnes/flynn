@@ -1,0 +1,256 @@
+/*
+ * Name: Griddle - style.less
+ * About: Where all your magic happens.
+ */
+/*
+ * Name: Griddle - reset.less
+ * About: Reset file to keep elements in order, based on Russ Weakley's reset - http://www.maxdesign.com.au/articles/css-reset/
+ *
+ * Following styles are here to STOP stuff from happening, and to make sure all the browsers are reading from the same page.
+ * Modify accordingly.
+ */
+html,
+body,
+ul,
+ol,
+li,
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+legend {
+  color: #000;
+}
+li {
+  margin-left: 20px;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  font-weight: normal;
+}
+input,
+textarea,
+select {
+  font-size: 110%;
+  line-height: 1.1;
+}
+abbr,
+acronym {
+  border-bottom: .1em dotted;
+  cursor: help;
+}
+/*
+ * Name: Griddle
+ * Author: David Darnes
+ * Author url: http://david.darn.es
+ * Tools: Made in Coda, Codekit and Less
+ * About: 12 column grid with responsive options, 960px base with large desktop, tablet and mobile views.
+ *
+ * Based on Tyler Tate's 1kb Grid - http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
+ */
+.span-1 {
+  width: 60px;
+}
+.span-2 {
+  width: 140px;
+}
+.span-3 {
+  width: 220px;
+}
+.span-4 {
+  width: 300px;
+}
+.span-5 {
+  width: 380px;
+}
+.span-6 {
+  width: 460px;
+}
+.span-7 {
+  width: 540px;
+}
+.span-8 {
+  width: 620px;
+}
+.span-9 {
+  width: 700px;
+}
+.span-10 {
+  width: 780px;
+}
+.span-11 {
+  width: 860px;
+}
+.span-12,
+.container {
+  width: 940px;
+}
+[class*="span-"] {
+  margin-left: 20px;
+  float: left;
+  max-width: 100%;
+}
+.container {
+  float: none;
+  margin: 0 auto;
+}
+.row {
+  margin-left: -20px;
+  clear: both;
+  zoom: 1;
+}
+.row:after,
+.row:before {
+  display: table;
+  line-height: 0;
+  content: "";
+  clear: both;
+}
+img {
+  min-width: 100%;
+  height: auto;
+}
+[class*="span-"],
+.container,
+.row {
+  zoom: 1;
+}
+img {
+  width: auto \9;
+}
+@media (min-width: 1200px) {
+  .span-1 {
+    width: 70px;
+  }
+  .span-2 {
+    width: 170px;
+  }
+  .span-3 {
+    width: 270px;
+  }
+  .span-4 {
+    width: 370px;
+  }
+  .span-5 {
+    width: 470px;
+  }
+  .span-6 {
+    width: 570px;
+  }
+  .span-7 {
+    width: 670px;
+  }
+  .span-8 {
+    width: 770px;
+  }
+  .span-9 {
+    width: 870px;
+  }
+  .span-10 {
+    width: 970px;
+  }
+  .span-11 {
+    width: 1070px;
+  }
+  .span-12,
+  .container {
+    width: 1170px;
+  }
+  [class*="span-"] {
+    margin-left: 30px;
+  }
+  .row {
+    margin-left: -30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .span-1 {
+    width: 40px;
+  }
+  .span-2 {
+    width: 95px;
+  }
+  .span-3 {
+    width: 150px;
+  }
+  .span-4 {
+    width: 205px;
+  }
+  .span-5 {
+    width: 260px;
+  }
+  .span-6 {
+    width: 315px;
+  }
+  .span-7 {
+    width: 370px;
+  }
+  .span-8 {
+    width: 425px;
+  }
+  .span-9 {
+    width: 480px;
+  }
+  .span-10 {
+    width: 535px;
+  }
+  .span-11 {
+    width: 590px;
+  }
+  .span-12,
+  .container {
+    width: 645px;
+  }
+  [class*="span-"] {
+    margin-left: 15px;
+  }
+  .row {
+    margin-left: -15px;
+  }
+}
+@media (max-width: 767px) {
+  [class*="span-"] {
+    margin-left: 0;
+    width: 100%;
+  }
+  .row {
+    margin: 0 20px;
+  }
+  .row .row {
+    margin: 0;
+  }
+  .container {
+    width: 100%;
+  }
+}
+body {
+  content: "magic";
+}
