@@ -1,11 +1,13 @@
 /*
- * Name: Griddle
+ * Name: Flynn
  * Author: David Darnes
  * Author url: http://david.darn.es
- * Tools: Made in Coda, Codekit and Less
+ * Tools: Made in Coda, Codekit & Less
  * About: 12 column grid with responsive options, 960px base with large desktop, tablet and mobile views.
  *
- * Based on Tyler Tate's 1kb Grid - http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
+ * Based on Tyler Tate's 1kb Grid http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
+ * &
+ * Twitter Bootstrap http://twitter.github.com/bootstrap/
  */
  
 
@@ -50,8 +52,20 @@ img { min-width: 100%; height: auto; }
 img { width: auto~"\9"; }
 
 
-// Base grid for extra large browsing
-@media (min-width: 1200px) {
+// Base grid for massive browsing, eg super high def iMac
+@media (min-width: 1800px) {
+	@column: 120px;
+	@gutter: 40px;
+
+	.grid( @column, @gutter );
+
+	[class*="span-"] { margin-left: @gutter; }
+	.row { margin-left: -@gutter; }
+}
+
+
+// Base grid for extra large browsing, eg a MacBook
+@media (min-width: 1200px) and (max-width: 1879px) {
 	@column: 70px;
 	@gutter: 30px;
 

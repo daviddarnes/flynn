@@ -68,13 +68,15 @@ acronym {
   cursor: help;
 }
 /*
- * Name: Griddle
+ * Name: Flynn
  * Author: David Darnes
  * Author url: http://david.darn.es
- * Tools: Made in Coda, Codekit and Less
+ * Tools: Made in Coda, Codekit & Less
  * About: 12 column grid with responsive options, 960px base with large desktop, tablet and mobile views.
  *
- * Based on Tyler Tate's 1kb Grid - http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
+ * Based on Tyler Tate's 1kb Grid http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
+ * &
+ * Twitter Bootstrap http://twitter.github.com/bootstrap/
  */
 .span-1 {
   width: 60px;
@@ -146,7 +148,52 @@ img {
 img {
   width: auto \9;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
+  .span-1 {
+    width: 120px;
+  }
+  .span-2 {
+    width: 280px;
+  }
+  .span-3 {
+    width: 440px;
+  }
+  .span-4 {
+    width: 600px;
+  }
+  .span-5 {
+    width: 760px;
+  }
+  .span-6 {
+    width: 920px;
+  }
+  .span-7 {
+    width: 1080px;
+  }
+  .span-8 {
+    width: 1240px;
+  }
+  .span-9 {
+    width: 1400px;
+  }
+  .span-10 {
+    width: 1560px;
+  }
+  .span-11 {
+    width: 1720px;
+  }
+  .span-12,
+  .container {
+    width: 1880px;
+  }
+  [class*="span-"] {
+    margin-left: 40px;
+  }
+  .row {
+    margin-left: -40px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1879px) {
   .span-1 {
     width: 70px;
   }
