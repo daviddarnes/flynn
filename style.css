@@ -1,13 +1,10 @@
 /*
- * Name: Griddle - style.less
- * About: Where all your magic happens.
- */
-/*
- * Name: Griddle - reset.less
- * About: Reset file to keep elements in order, based on Russ Weakley's reset - http://www.maxdesign.com.au/articles/css-reset/
- *
+ * Name: Flynn - Reset
+ * About: Reset file to keep elements in order.
  * Following styles are here to STOP stuff from happening, and to make sure all the browsers are reading from the same page.
  * Modify accordingly.
+ * 
+ * Based on Russ Weakley's reset http://www.maxdesign.com.au/articles/css-reset/
  */
 html,
 body,
@@ -67,7 +64,7 @@ acronym {
   border-bottom: .1em dotted;
   cursor: help;
 }
-/*
+/*!
  * Name: Flynn
  * Author: David Darnes
  * Author url: http://david.darn.es
@@ -298,6 +295,10 @@ img {
     width: 100%;
   }
 }
+/*
+ * Name: Flynn - Styles
+ * About: Where all your magic happens.
+ */
 body {
   content: "magic";
 }
