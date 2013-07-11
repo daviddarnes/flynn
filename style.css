@@ -118,6 +118,7 @@ acronym {
   max-width: 100%;
 }
 .container {
+  clear: both;
   float: none;
   margin: 0 auto;
 }
@@ -134,7 +135,7 @@ acronym {
   clear: both;
 }
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 [class*="span-"],
@@ -145,7 +146,7 @@ img {
 img {
   width: auto \9;
 }
-@media (min-width: 1800px) {
+@media (min-width: 2000px) {
   .span-1 {
     width: 120px;
   }
@@ -190,7 +191,7 @@ img {
     margin-left: -40px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1879px) {
+@media (min-width: 1200px) and (max-width: 1999px) {
   .span-1 {
     width: 70px;
   }
