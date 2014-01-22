@@ -75,45 +75,85 @@ acronym {
  * &
  * Twitter Bootstrap http://twitter.github.com/bootstrap/
  */
+/*
+@column: 60px; // The column width
+@gutter: 20px; // The gutter width
+*/
+.container {
+  max-width: 1600px;
+}
 .span-1 {
-  width: 60px;
+  width: 7%;
 }
 .span-2 {
-  width: 140px;
+  width: 15.33%;
 }
 .span-3 {
-  width: 220px;
+  width: 23.66%;
 }
 .span-4 {
-  width: 300px;
+  width: 31.990000000000002%;
 }
 .span-5 {
-  width: 380px;
+  width: 40.32%;
 }
 .span-6 {
-  width: 460px;
+  width: 48.65%;
 }
 .span-7 {
-  width: 540px;
+  width: 56.980000000000004%;
 }
 .span-8 {
-  width: 620px;
+  width: 65.31%;
 }
 .span-9 {
-  width: 700px;
+  width: 73.64%;
 }
 .span-10 {
-  width: 780px;
+  width: 81.97%;
 }
 .span-11 {
-  width: 860px;
+  width: 90.3%;
 }
 .span-12,
 .container {
-  width: 940px;
+  width: 98.63%;
+}
+[class*="span-"].shift-1 {
+  margin-left: 9.66%;
+}
+[class*="span-"].shift-2 {
+  margin-left: 17.990000000000002%;
+}
+[class*="span-"].shift-3 {
+  margin-left: 26.32%;
+}
+[class*="span-"].shift-4 {
+  margin-left: 34.65%;
+}
+[class*="span-"].shift-5 {
+  margin-left: 42.980000000000004%;
+}
+[class*="span-"].shift-6 {
+  margin-left: 51.31%;
+}
+[class*="span-"].shift-7 {
+  margin-left: 59.64%;
+}
+[class*="span-"].shift-8 {
+  margin-left: 67.97%;
+}
+[class*="span-"].shift-9 {
+  margin-left: 76.3%;
+}
+[class*="span-"].shift-10 {
+  margin-left: 84.63%;
+}
+[class*="span-"].shift-11 {
+  margin-left: 92.96000000000001%;
 }
 [class*="span-"] {
-  margin-left: 20px;
+  margin-left: 1.33%;
   float: left;
   max-width: 100%;
 }
@@ -123,7 +163,7 @@ acronym {
   margin: 0 auto;
 }
 .row {
-  margin-left: -20px;
+  margin-left: -1.33%;
   clear: both;
   zoom: 1;
 }
@@ -138,6 +178,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 [class*="span-"],
 .container,
 .row {
@@ -146,154 +193,232 @@ img {
 img {
   width: auto \9;
 }
-@media (min-width: 2000px) {
-  .span-1 {
-    width: 120px;
-  }
-  .span-2 {
-    width: 280px;
-  }
-  .span-3 {
-    width: 440px;
-  }
-  .span-4 {
-    width: 600px;
-  }
-  .span-5 {
-    width: 760px;
-  }
-  .span-6 {
-    width: 920px;
-  }
-  .span-7 {
-    width: 1080px;
-  }
-  .span-8 {
-    width: 1240px;
-  }
-  .span-9 {
-    width: 1400px;
-  }
-  .span-10 {
-    width: 1560px;
-  }
-  .span-11 {
-    width: 1720px;
-  }
-  .span-12,
-  .container {
-    width: 1880px;
-  }
-  [class*="span-"] {
-    margin-left: 40px;
-  }
-  .row {
-    margin-left: -40px;
-  }
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-@media (min-width: 1200px) and (max-width: 1999px) {
-  .span-1 {
-    width: 70px;
-  }
-  .span-2 {
-    width: 170px;
-  }
-  .span-3 {
-    width: 270px;
-  }
-  .span-4 {
-    width: 370px;
-  }
-  .span-5 {
-    width: 470px;
-  }
-  .span-6 {
-    width: 570px;
-  }
-  .span-7 {
-    width: 670px;
-  }
-  .span-8 {
-    width: 770px;
-  }
-  .span-9 {
-    width: 870px;
-  }
-  .span-10 {
-    width: 970px;
-  }
-  .span-11 {
-    width: 1070px;
-  }
-  .span-12,
-  .container {
-    width: 1170px;
-  }
-  [class*="span-"] {
-    margin-left: 30px;
-  }
-  .row {
-    margin-left: -30px;
-  }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  .span-1 {
-    width: 40px;
-  }
-  .span-2 {
-    width: 95px;
-  }
-  .span-3 {
-    width: 150px;
-  }
-  .span-4 {
-    width: 205px;
-  }
-  .span-5 {
-    width: 260px;
-  }
-  .span-6 {
-    width: 315px;
-  }
-  .span-7 {
-    width: 370px;
-  }
-  .span-8 {
-    width: 425px;
-  }
-  .span-9 {
-    width: 480px;
-  }
-  .span-10 {
-    width: 535px;
-  }
-  .span-11 {
-    width: 590px;
-  }
-  .span-12,
-  .container {
-    width: 645px;
-  }
-  [class*="span-"] {
-    margin-left: 15px;
-  }
-  .row {
-    margin-left: -15px;
-  }
-}
+/* @import "breakpoints.less"; // Breakpoints for varying browser sizes, comment this out when using a fluid grid */
 @media (max-width: 767px) {
   [class*="span-"] {
     margin-left: 0;
     width: 100%;
   }
+  [class*="span-"][class*="shift-"] {
+    margin-left: 0;
+  }
   .row {
-    margin: 0 20px;
+    margin: 0 1.33%;
   }
   .row .row {
     margin: 0;
   }
   .container {
     width: 100%;
+  }
+}
+/*
+ * Name: Flynn - Typography
+ * About: Base type sizing incase something is missed in the design.
+ * Following styles are here to STOP the browser from guessing how the type should look, and that they are reading from the same page.
+ * Modify accordingly.
+ */
+body {
+  font: 16px/1.8 sans-serif;
+  font-weight: 400;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2em;
+  padding-bottom: .8em;
+  font-weight: 600;
+}
+h1 {
+  font-size: 3.3em;
+}
+h2 {
+  font-size: 2.8em;
+}
+h3 {
+  font-size: 2.3em;
+}
+h4 {
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.3em;
+}
+h6 {
+  font-size: .8em;
+  font-style: italic;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: #00F;
+}
+a:hover {
+  text-decoration: underline;
+}
+mark {
+  background: #FF0;
+  padding: .2em;
+}
+p {
+  font-size: 1em;
+  padding-top: 0;
+  padding-bottom: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+del,
+s {
+  text-decoration: line-through;
+}
+strong,
+b {
+  font-weight: 600;
+}
+small,
+time,
+cite,
+details p,
+dt {
+  font-size: .8em;
+}
+abbr,
+dfn {
+  border-bottom: dashed 1px #DDD;
+  padding: .15em;
+  cursor: help;
+}
+i,
+em,
+cite,
+noscript {
+  font-style: italic;
+}
+u,
+ins {
+  text-decoration: underline;
+}
+sup,
+sub {
+  font-size: .75em;
+  line-height: 1em;
+}
+sub {
+  vertical-align: baseline;
+}
+sup {
+  vertical-align: text-top;
+}
+hr {
+  height: 1px;
+  border: 0;
+  background: #DDD;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+blockquote {
+  padding: 1.8em;
+  margin: 0 0 1em 0;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  position: relative;
+}
+blockquote:before {
+  content: open-quote;
+  color: #DDD;
+  font-size: 3.05em;
+  position: absolute;
+  left: .1em;
+  top: .19em;
+}
+q:before {
+  content: "\2018";
+}
+q:after {
+  content: "\2019";
+}
+q:before,
+q:after {
+  font-size: 1.1em;
+}
+address {
+  font-style: normal;
+  padding: 0 0 1em 0;
+}
+samp,
+pre,
+code,
+kbd,
+var {
+  font-family: monospace;
+  margin: 0;
+}
+pre {
+  padding-bottom: 1em;
+  margin: 0;
+  line-height: 1.8em;
+}
+summary:focus {
+  outline: none;
+  text-decoration: underline;
+}
+details p {
+  padding-left: 1.15em;
+  font-size: .9em;
+}
+::-moz-selection {
+  color: #FFF;
+  background: #333;
+}
+::selection {
+  color: #FFF;
+  background: #333;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0 0 1em 1.3em;
+  line-height: 1.5em;
+}
+dl {
+  line-height: 1.5em;
+}
+dt {
+  color: #999;
+  line-height: 1em;
+  padding-top: .8em;
+}
+dd {
+  font-size: .9em;
+  margin: 0;
+  padding-left: .5em;
+}
+@media (min-width: 2000px) {
+  body {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  body {
+    font-size: 11px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
   }
 }
 /*

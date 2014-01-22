@@ -11,9 +11,22 @@
  */
 
 
-// Base grid columns and gutters, normally 960px
-@column: 60px;
-@gutter: 20px;
+// Base variables for fixed grid columns and gutters, comment this out when using a fluid grid
+
+/*
+@column: 60px; // The column width
+@gutter: 20px; // The gutter width
+*/
+
+// Base variables for fluid grid columns and gutters and a max container width, comment this out when using a fixed grid
+
+@column: 7%; // The column width
+@gutter: 1.33%; // The gutter width
+
+.container { // The maximum size of your fluid grid
+	max-width: 1600px;
+}
+
 
 .grid( @column, @gutter ) {
 	.span-1 {  width:@column; }
@@ -79,47 +92,18 @@ img { max-width: 100%; height: auto; }
 }
 
 
-// IE Fixes
+// IE & Browser Fixes
 [class*="span-"], .container, .row { zoom: 1; }
 
 img { width: auto~"\9"; }
 
-
-// Base grid for massive browsing, eg super high def iMac
-@media (min-width: 2000px) {
-	@column: 120px;
-	@gutter: 40px;
-
-	.grid( @column, @gutter );
-
-	[class*="span-"] { margin-left: @gutter; }
-	.row { margin-left: -@gutter; }
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
 }
 
-
-// Base grid for extra large browsing, eg a MacBook
-@media (min-width: 1200px) and (max-width: 1999px) {
-	@column: 70px;
-	@gutter: 30px;
-
-	.grid( @column, @gutter );
-
-	[class*="span-"] { margin-left: @gutter; }
-	.row { margin-left: -@gutter; }
-}
-
-
-// Base grid tablets, eg the ever popular iPad
-@media (min-width: 768px) and (max-width: 979px) {
-	@column: 40px;
-	@gutter: 15px;
-
-	.grid( @column, @gutter );
-
-	[class*="span-"] { margin-left: @gutter; }
-	.row { margin-left: -@gutter; }
-}
-
+/* @import "breakpoints.less"; // Breakpoints for varying browser sizes, comment this out when using a fluid grid */
 
 // Base grid mobile, eg the even more popular iPhone
 @media (max-width: 767px) {
