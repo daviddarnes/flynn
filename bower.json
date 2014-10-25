@@ -1,0 +1,25 @@
+{
+  "name": "flynn",
+  "version": "1.0.0",
+  "homepage": "https://github.com/daviddarnes/flynn",
+  "authors": [
+    "David Darnes <me@daviddarnes.com>"
+  ],
+  "description": "A CSS grid system",
+  "main": "grid.css",
+  "keywords": [
+    "CSS",
+    "grid",
+    "system",
+    "lESS",
+    "simple"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
