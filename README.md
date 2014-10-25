@@ -12,6 +12,7 @@ Its just a grid.
 Usage
 -----
 Manual:
+
 1. Download repo
 2. Copy grid.css into your project
 
