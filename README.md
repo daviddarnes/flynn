@@ -17,7 +17,8 @@ Manual:
 2. Copy grid.css into your project
 
 Bower:
-*coming soon*
+
+1. ```bower install --save https://github.com/daviddarnes/flynn.git```
 
 ###Credits
 Based on [Tyler Tate's 1kb Grid](http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/) and [Bootstrap grid structure](http://getbootstrap.com/).
