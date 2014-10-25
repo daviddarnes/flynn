@@ -1,0 +1,26 @@
+{
+  "name": "flynn",
+  "version": "1.0.0",
+  "description": "A CSS grid system",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp less"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daviddarnes/flynn.git"
+  },
+  "keywords": [
+    "CSS",
+    "grid",
+    "system",
+    "LESS",
+    "simple"
+  ],
+  "author": "David Darnes <me@daviddarnes.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daviddarnes/flynn/issues"
+  },
+  "homepage": "https://github.com/daviddarnes/flynn"
+}
