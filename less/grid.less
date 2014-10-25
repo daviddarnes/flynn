@@ -1,32 +1,15 @@
 /*!
- * Name: Flynn
- * Author: David Darnes
- * Author url: http://david.darn.es
- * Tools: Made in Coda, Codekit & Less
- * About: 12 column grid with responsive options, 960px base with large desktop, tablet and mobile views.
- *
- * Based on Tyler Tate's 1kb Grid http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
- * &
- * Twitter Bootstrap http://twitter.github.com/bootstrap/
+ * Flynn Grid Structure
+ * https://github.com/daviddarnes/flynn
  */
 
-
-// Base variables for fixed grid columns and gutters, comment this out when using a fluid grid
-
-/*
-@column: 60px; // The column width
-@gutter: 20px; // The gutter width
-*/
-
-// Base variables for fluid grid columns and gutters and a max container width, comment this out when using a fixed grid
-
+// Default variables for fluid grid columns and gutters and a max container width, add comments when using a breakpoint based grid
 @column: 7%; // The column width
 @gutter: 1.33%; // The gutter width
 
 .container { // The maximum size of your fluid grid
 	max-width: 1600px;
 }
-
 
 .grid( @column, @gutter ) {
 	.span-1 {  width:@column; }
@@ -91,7 +74,6 @@ img { max-width: 100%; height: auto; }
 			box-sizing: border-box;
 }
 
-
 // IE & Browser Fixes
 [class*="span-"], .container, .row { zoom: 1; }
 
@@ -103,9 +85,10 @@ img { width: auto~"\9"; }
 			box-sizing: border-box;
 }
 
-/* @import "breakpoints.less"; // Breakpoints for varying browser sizes, comment this out when using a fluid grid */
+// Breakpoints for varying browser sizes, remove comments when using a breakpoint based grid
+/* @import "breakpoints.less"; */
 
-// Base grid mobile, eg the even more popular iPhone
+// Single column mobile structure
 @media (max-width: 767px) {
 	[class*="span-"] {
 		margin-left: 0; width: 100%;

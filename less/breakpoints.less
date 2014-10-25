@@ -1,10 +1,8 @@
 /*
- * Name: Flynn - Breakpoints
- * About: Breakpoint grids for above and below a common browser size
- * Modify accordingly
+ * Flynn Grid: Breakpoints
  */
 
-// Base grid for massive browsing, eg super high def iMac
+// Default grid for massive browsing, eg super high def iMac
 @media (min-width: 2000px) {
 
 	.grid( @column * 2, @gutter * 2 );
@@ -14,7 +12,7 @@
 }
 
 
-// Base grid for extra large browsing, eg a MacBook
+// Default grid for extra large browsing, eg a MacBook
 @media (min-width: 1200px) and (max-width: 1999px) {
 
 	.grid( @column + 10, @gutter + 10 );
@@ -24,7 +22,7 @@
 }
 
 
-// Base grid tablets, eg the ever popular iPad
+// Default grid for tablets, eg the ever popular iPad
 @media (min-width: 768px) and (max-width: 979px) {
 
 	.grid( @column - 20, @gutter - 5 );

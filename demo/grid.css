@@ -1,14 +1,8 @@
 /*!
- * Name: Flynn
- * Author: David Darnes
- * Author url: http://david.darn.es
- * Tools: Made in Coda, Codekit & Less
- * About: 12 column grid with responsive options, 960px base with large desktop, tablet and mobile views.
- *
- * Based on Tyler Tate's 1kb Grid http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
- * &
- * Twitter Bootstrap http://twitter.github.com/bootstrap/
+ * Flynn Grid Structure
+ * https://github.com/daviddarnes/flynn
  */
+
 /*
 @column: 60px; // The column width
 @gutter: 20px; // The gutter width
