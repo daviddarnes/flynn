@@ -5,10 +5,10 @@
 
 // Default variables for fluid grid columns and gutters and a max container width, add comments when using a breakpoint based grid
 @column: 7%; // The column width
-@gutter: 1.33%; // The gutter width
+@gutter: 1.333%; // The gutter width
 
 .container { // The maximum size of your fluid grid
-	max-width: 1600px;
+	max-width: 1200px;
 }
 
 .grid( @column, @gutter ) {
@@ -23,7 +23,7 @@
 	.span-9 {  width:@column * 9  + @gutter * 8; }
 	.span-10 { width:@column * 10 + @gutter * 9; }
 	.span-11 { width:@column * 11 + @gutter * 10; }
-	.span-12, .container { width:@column * 12 + @gutter * 11; }
+	.span-12 { width:@column * 12 + @gutter * 11; }
 
 	[class*="span-"] {
 		&.shift-1 {  margin-left:@column + @gutter * 2; }

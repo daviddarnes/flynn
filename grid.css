@@ -1,93 +1,81 @@
 /*!
- * Name: Flynn
- * Author: David Darnes
- * Author url: http://david.darn.es
- * Tools: Made in Coda, Codekit & Less
- * About: 12 column grid with responsive options, 960px base with large desktop, tablet and mobile views.
- *
- * Based on Tyler Tate's 1kb Grid http://www.usabilitypost.com/2009/05/29/the-1kb-css-grid-part-1/
- * &
- * Twitter Bootstrap http://twitter.github.com/bootstrap/
+ * Flynn Grid Structure
+ * https://github.com/daviddarnes/flynn
  */
-/*
-@column: 60px; // The column width
-@gutter: 20px; // The gutter width
-*/
 .container {
-  max-width: 1600px;
+  max-width: 1200px;
 }
 .span-1 {
   width: 7%;
 }
 .span-2 {
-  width: 15.33%;
+  width: 15.333%;
 }
 .span-3 {
-  width: 23.66%;
+  width: 23.666%;
 }
 .span-4 {
-  width: 31.99%;
+  width: 31.999%;
 }
 .span-5 {
-  width: 40.32%;
+  width: 40.332%;
 }
 .span-6 {
-  width: 48.65%;
+  width: 48.665%;
 }
 .span-7 {
-  width: 56.98%;
+  width: 56.998%;
 }
 .span-8 {
-  width: 65.31%;
+  width: 65.331%;
 }
 .span-9 {
-  width: 73.64%;
+  width: 73.664%;
 }
 .span-10 {
-  width: 81.97%;
+  width: 81.997%;
 }
 .span-11 {
-  width: 90.3%;
+  width: 90.33%;
 }
-.span-12,
-.container {
-  width: 98.63%;
+.span-12 {
+  width: 98.663%;
 }
 [class*="span-"].shift-1 {
-  margin-left: 9.66%;
+  margin-left: 9.666%;
 }
 [class*="span-"].shift-2 {
-  margin-left: 17.99%;
+  margin-left: 17.999%;
 }
 [class*="span-"].shift-3 {
-  margin-left: 26.32%;
+  margin-left: 26.332%;
 }
 [class*="span-"].shift-4 {
-  margin-left: 34.65%;
+  margin-left: 34.665%;
 }
 [class*="span-"].shift-5 {
-  margin-left: 42.98%;
+  margin-left: 42.998%;
 }
 [class*="span-"].shift-6 {
-  margin-left: 51.31%;
+  margin-left: 51.331%;
 }
 [class*="span-"].shift-7 {
-  margin-left: 59.64%;
+  margin-left: 59.664%;
 }
 [class*="span-"].shift-8 {
-  margin-left: 67.97%;
+  margin-left: 67.997%;
 }
 [class*="span-"].shift-9 {
-  margin-left: 76.3%;
+  margin-left: 76.33%;
 }
 [class*="span-"].shift-10 {
-  margin-left: 84.63%;
+  margin-left: 84.663%;
 }
 [class*="span-"].shift-11 {
-  margin-left: 92.96%;
+  margin-left: 92.996%;
 }
 [class*="span-"] {
-  margin-left: 1.33%;
+  margin-left: 1.333%;
   float: left;
   max-width: 100%;
 }
@@ -97,7 +85,7 @@
   margin: 0 auto;
 }
 .row {
-  margin-left: -1.33%;
+  margin-left: -1.333%;
   clear: both;
   zoom: 1;
 }
@@ -134,7 +122,7 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* @import "breakpoints.less"; // Breakpoints for varying browser sizes, comment this out when using a fluid grid */
+/* @import "breakpoints.less"; */
 @media (max-width: 767px) {
   [class*="span-"] {
     margin-left: 0;
@@ -144,7 +132,7 @@ img {
     margin-left: 0;
   }
   .row {
-    margin: 0 1.33%;
+    margin: 0 1.333%;
   }
   .row .row {
     margin: 0;

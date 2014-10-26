@@ -1,18 +1,10 @@
 /*!
- * Name: Flynn Demo
+ * Flynn Grid Demo
  */
 body {
   background: #d9d9d9;
 }
-body * {
-  border: 1px solid #cccccc;
-}
-.container {
-  background: #e6e6e6;
-}
-.row {
-  background: #f2f2f2;
-}
 [class*="span-"] {
   background: white;
+  margin-top: 1px;
 }
