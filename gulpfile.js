@@ -1,19 +1,19 @@
 // Requirements
 var gulp = require('gulp');
-var less = require('gulp-less');
 var path = require('path');
+var less = require('gulp-less');
+var sass = require('gulp-sass');
 
-// Final CSS task
+// LESS task
 gulp.task('less', function () {
-	gulp.src('./less/grid.less')
+	gulp.src('./grid/grid.less')
 	.pipe(less())
-	.pipe(gulp.dest('./'));
+	.pipe(gulp.dest('./grid'));
 });
 
-// Demo page task
-gulp.task('demo', function () {
-	gulp.src(['./less/grid.less', './less/demo.less'])
-	.pipe(less())
-	.pipe(gulp.dest('./demo/'));
+// SASS task
+gulp.task('sass', function () {
+	gulp.src('./grid/grid.scss')
+	.pipe(sass())
+	.pipe(gulp.dest('./grid'));
 });
-

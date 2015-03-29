@@ -1,7 +1,7 @@
 {
   "name": "flynn",
   "version": "1.0.0",
-  "homepage": "https://github.com/daviddarnes/flynn",
+  "homepage": "http://daviddarnes.github.io/flynn/",
   "authors": [
     "David Darnes <me@daviddarnes.com>"
   ],
@@ -9,9 +9,10 @@
   "main": "grid.css",
   "keywords": [
     "CSS",
+    "lESS",
+    "SCSS",
     "grid",
     "system",
-    "lESS",
     "simple"
   ],
   "license": "MIT",

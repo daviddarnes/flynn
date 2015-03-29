@@ -1,10 +1,15 @@
 /*!
- * Flynn Grid Demo
+ * Flynn Grid: Demo
+ * http://daviddarnes.github.io/flynn
  */
+
+@import url("grid/grid.css");
+
 body {
-  background: #d9d9d9;
+	background: #d9d9d9;
 }
 [class*="span-"] {
-  background: white;
-  margin-top: 1px;
+	background: white;
+	margin-top: 1px;
+	padding: 0 5px;
 }
