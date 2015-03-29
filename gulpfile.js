@@ -8,12 +8,12 @@ var sass = require('gulp-sass');
 gulp.task('less', function () {
 	gulp.src('./grid/grid.less')
 	.pipe(less())
-	.pipe(gulp.dest('./grid/'));
+	.pipe(gulp.dest('./grid'));
 });
 
 // SASS task
 gulp.task('sass', function () {
 	gulp.src('./grid/grid.scss')
 	.pipe(sass())
-	.pipe(gulp.dest('./grid/'));
+	.pipe(gulp.dest('./grid'));
 });
