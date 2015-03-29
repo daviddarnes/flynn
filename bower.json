@@ -6,7 +6,7 @@
     "David Darnes <me@daviddarnes.com>"
   ],
   "description": "A CSS grid system",
-  "main": "./grid/grid.css",
+  "main": "grid/grid.css",
   "keywords": [
     "CSS",
     "lESS",
