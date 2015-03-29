@@ -17,10 +17,3 @@ gulp.task('sass', function () {
 	.pipe(sass())
 	.pipe(gulp.dest('./grid/'));
 });
-
-// Demo task
-gulp.task('demo', function () {
-	gulp.src('./demo.less')
-	.pipe(less())
-	.pipe(gulp.dest('./demo.css'));
-});
