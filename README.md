@@ -1,8 +1,8 @@
 Flynn
 =====
 
-A CSS grid 
-----------
+## A CSS grid
+
 A grid that doesn't fill up your CSS with glossy buttons, overworked typography base or styles that you'll never use. I've used this on a number of projects and I think it gets the job done. Feel free to use it if you like.
 
 Its just a grid.
