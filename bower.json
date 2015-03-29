@@ -1,12 +1,12 @@
 {
   "name": "flynn",
   "version": "1.0.0",
-  "homepage": "http://daviddarnes.github.io/flynn/",
+  "homepage": "https://github.com/daviddarnes/flynn",
   "authors": [
     "David Darnes <me@daviddarnes.com>"
   ],
   "description": "A CSS grid system",
-  "main": "grid.css",
+  "main": "./grid/grid.css",
   "keywords": [
     "CSS",
     "lESS",
