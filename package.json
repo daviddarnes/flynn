@@ -2,7 +2,7 @@
   "name": "flynn",
   "version": "1.0.0",
   "description": "A CSS grid system",
-  "main": "gulpfile.js",
+  "main": "index.html",
   "scripts": {
     "test": "gulp less"
   },
@@ -12,9 +12,10 @@
   },
   "keywords": [
     "CSS",
+    "lESS",
+    "SCSS",
     "grid",
     "system",
-    "LESS",
     "simple"
   ],
   "author": "David Darnes <me@daviddarnes.com>",
