@@ -83,3 +83,55 @@ img { max-width: 100%; height: auto; }
 	.row .row { margin: 0; }
 	.container { width: 100%; }
 }
+
+
+// CSS Grid spec
+@supports (display: grid) {
+	.row {
+		margin-left: 0;
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-gap: $gutter;
+		&:after, &:before {
+			display: none;
+		}
+	}
+
+	[class*="span-"] {
+		margin-left: 0;
+		float: none;
+		grid-column-end: span 12;
+	}
+
+	.span-1  { width: auto; grid-column-end: span 1;  }
+	.span-2  { width: auto; grid-column-end: span 2;  }
+	.span-3  { width: auto; grid-column-end: span 3;  }
+	.span-4  { width: auto; grid-column-end: span 4;  }
+	.span-5  { width: auto; grid-column-end: span 5;  }
+	.span-6  { width: auto; grid-column-end: span 6;  }
+	.span-7  { width: auto; grid-column-end: span 7;  }
+	.span-8  { width: auto; grid-column-end: span 8;  }
+	.span-9  { width: auto; grid-column-end: span 9;  }
+	.span-10 { width: auto; grid-column-end: span 10; }
+	.span-11 { width: auto; grid-column-end: span 11; }
+	.span-12 { width: auto; grid-column-end: span 12; }
+
+	[class*="span-"] {
+		&.shift-1  { grid-column-start: 1; }
+		&.shift-2  { grid-column-start: 2; }
+		&.shift-3  { grid-column-start: 3; }
+		&.shift-4  { grid-column-start: 4; }
+		&.shift-5  { grid-column-start: 5; }
+		&.shift-6  { grid-column-start: 6; }
+		&.shift-7  { grid-column-start: 7; }
+		&.shift-8  { grid-column-start: 8; }
+		&.shift-9  { grid-column-start: 9; }
+		&.shift-10 { grid-column-start: 10; }
+		&.shift-11 { grid-column-start: 11; }
+	}
+
+	@media (max-width: 767px) {
+		.row { display: block; }
+		[class*="span-"] { float: left; width: 100%; }
+	}
+}

@@ -1,6 +1,6 @@
 {
   "name": "flynn",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "homepage": "https://github.com/daviddarnes/flynn",
   "authors": [
     "David Darnes <me@daviddarnes.com>"
@@ -17,7 +17,8 @@
   ],
   "license": "MIT",
   "ignore": [
-    "**/.*",
+    "docs",
+    "gulpfile.js",
     "node_modules",
     "bower_components",
     "test",
