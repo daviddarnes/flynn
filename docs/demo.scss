@@ -3,11 +3,12 @@
  * http://daviddarnes.github.io/flynn
  */
 
-@import url("grid/grid.css");
+@import 'grid/grid.scss';
 
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 [class*="span-"] {
 	background: #f4f4f4;
 	margin-top: 1px;
