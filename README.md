@@ -1,7 +1,7 @@
 Flynn
 =====
 
-### A CSS grid
+## A CSS grid
 
 A grid that doesn't fill up your CSS with glossy buttons, overworked typography base or styles that you'll never use. I've used this on a number of projects and I think it gets the job done. Feel free to use it if you like.
 
@@ -9,21 +9,28 @@ Its just a grid.
 
 [Demo page](http://daviddarnes.github.io/flynn)
 
-### Usage
+## v2 Changes
 
-Manual:
+- CSS Grid spec properties have been added, behind an `@supports` query
+- Due to the change to the Grid spec, the `[shift-]` only works from the very left on the first item. Would recommend checking this behaviour in your supported browsers
+- The main file has been switched to the `scss` file, expected the most desired file
 
-1. Download repo
-2. Copy [```grid.css```](https://github.com/daviddarnes/flynn/blob/master/grid/grid.css) into your project
+## Usage
 
-Bower:
+### npm:
 
-1. ```bower install --save https://github.com/daviddarnes/flynn.git```
+1. `npm install --save https://github.com/daviddarnes/flynn.git`
 2. Import the file with your normal project process
 
-### Preprocessors
+### Manual:
 
-The ```.css``` file is used by default in bower, however you can redefine it to either [```.less```](https://github.com/daviddarnes/flynn/blob/master/grid/grid.less) or [```.scss```](https://github.com/daviddarnes/flynn/blob/master/grid/grid.scss) for less or sass preprocessing.
+1. Copy the [`grid.css`](https://github.com/daviddarnes/flynn/blob/master/grid/grid.css), [`grid.scss`](https://github.com/daviddarnes/flynn/blob/master/grid/grid.scss) or [`grid.less`](https://github.com/daviddarnes/flynn/blob/master/grid/grid.less) file into your project
+2. Done
+
+### Bower:
+
+1. `bower install --save https://github.com/daviddarnes/flynn.git`
+2. Import the file with your normal project process
 
 ### Credits
 Inspired by:
